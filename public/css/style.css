@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #15DEA5;
   font-size: 2rem;
   font-weight: 100;
@@ -24,23 +24,39 @@ body {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 5rem;
   font-style: italic;
 }
 
 textarea {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 2rem;
 }
 
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-style: italic;
   font-size: 2.75rem;
+}
+
+.btn {
+  padding: 1.5rem;
+  border: 0.1rem solid #15DEA5;
+  color: #15DEA5;
+  background: #001534;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #15DEA5;
+  color: #D6FFF5;
+}
+.btn--full-width {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header {
@@ -89,6 +105,48 @@ button {
   border: 0.1rem solid #D6FFF5;
 }
 
+.form {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+.form__heading {
+  width: 100%;
+  color: #fff;
+  text-shadow: 0.55rem 0.55rem #11af82;
+  background: #15DEA5;
+  line-height: 5rem;
+  padding: 1.5rem;
+}
+.form__field label {
+  color: #D6FFF5;
+  display: block;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+}
+.form__field input {
+  width: 100%;
+  background: #001534;
+  border: 0.1rem solid #15DEA5;
+  padding: 1.5rem;
+  color: #D6FFF5;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;
+  border: 0.1rem solid #15DEA5;
+  background-color: #001534;
+  color: #15DEA5;
+}
+.form__field textarea {
+  width: 100%;
+  color: #15DEA5;
+  background: #001534;
+  border: 0.1rem solid #15DEA5;
+  outline: none;
+  padding: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
 .quote {
   text-align: right;
   font-size: 6rem;
@@ -113,7 +171,7 @@ button {
 }
 .proj-prev__image {
   margin: 0;
-  opacity: 0.2;
+  opacity: .2;
   width: 100%;
   display: block;
   overflow: hidden;
@@ -265,5 +323,3 @@ button {
   width: 100%;
   margin: 0 auto;
 }
-
-/*# sourceMappingURL=style.css.map */
