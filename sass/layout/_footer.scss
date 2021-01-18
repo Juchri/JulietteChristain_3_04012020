@@ -1,0 +1,23 @@
+footer {
+    background: #353535;
+}
+
+.logo--footer{
+    padding: 25px;
+}
+
+.line-footer{
+    padding: 10px 10px 10px 30px;
+    display: flex;
+    flex-direction: row;
+        h5{
+        color: white;
+        margin:0;
+        }
+}
+
+.icon-footer{
+    color: white;
+    width: 20px;
+    padding: 0 20px 0 0;
+}

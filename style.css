@@ -114,11 +114,12 @@ h3 {
 .favourite {
   border: none;
   background: none;
-  color: linear-gradient(#FF79DA, #9356DC);
+  align-self: center;
 }
 
 .active {
   display: none;
+  color: linear-gradient(#FF79DA, #9356DC);
 }
 
 .active:hover {
@@ -170,6 +171,30 @@ h3 {
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
+}
+
+footer {
+  background: #353535;
+}
+
+.logo--footer {
+  padding: 25px;
+}
+
+.line-footer {
+  padding: 10px 10px 10px 30px;
+  display: flex;
+  flex-direction: row;
+}
+.line-footer h5 {
+  color: white;
+  margin: 0;
+}
+
+.icon-footer {
+  color: white;
+  width: 20px;
+  padding: 0 20px 0 0;
 }
 
 .functions {
@@ -227,6 +252,7 @@ h3 {
   background: white;
   border-radius: 3ex;
   margin: 10px;
+  box-shadow: 3px 3px 20px #dbdbdb;
 }
 .menu__card__cartel {
   display: flex;
@@ -235,6 +261,7 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 15px;
+  width: 90%;
 }
 .menu__card__cartel__text h4 {
   font-size: 1.2em;
@@ -248,9 +275,24 @@ h3 {
   margin: 0;
 }
 
+.new {
+  background-color: #A9E0D1;
+  font-family: Roboto, Arial;
+  padding: 10px 15px 10px 15px;
+  color: #368C6F;
+  box-shadow: 3px 3px 20px #5D5D5D;
+  border-radius: 0.3ex;
+  display: flex;
+  margin: 20px;
+  height: fit-content;
+  margin-left: auto;
+  font-weight: 600;
+}
+
 .img-card {
   border-radius: 3ex 3ex 0 0;
   width: 100%;
+  display: flex;
 }
 
 .favourite {
