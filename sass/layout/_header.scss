@@ -1,14 +1,45 @@
-.header {
-    background: $colour-primary;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;   
-    &__logo {
-        font-size: 7rem;
-        color: $colour-secondary;
-        margin-left: 10rem;
-        @include heading-shadow($colour-white);
+.container-logo {
+    background-image: url("/Users/juliettemarseilleconcerts/Documents/Openclassroom/Formation/P3 Oh my food/Site Oh my food/JulietteChristain_3_04012020/public/img/logo/ohmyfood@2x.svg");
+    background-repeat: no-repeat;
+    align-self: center;
+    height: 40px;
+    background-position: center;
     }
-}
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+
+.localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    background-color: $colour-grey;
+    border-top: solid #CCCCCC;
+    box-shadow: 3px 3px 20px #DEDEDE;
+    margin: 0;
+    }
+
+.search-input {
+    font-size: Roboto;
+    border: 0px #CECDCE solid;
+    background-color: $colour-grey;
+    font-weight: bold;
+    }
+
+.localisation-logo {
+   padding-right: 10px;
+   padding-left: 10px;
+    }
+
+ .description {
+    background-color: #F6F6F6;
+    margin: 0;
+    display:flex;
+    align-content: center;
+    align-items:center;
+    flex-direction:column;
+    padding-bottom: 50px;
+    }

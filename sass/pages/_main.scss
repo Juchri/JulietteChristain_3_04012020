@@ -1,0 +1,88 @@
+.functions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    font-size: 1em;
+    }
+
+.text-functions
+{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    border-radius: 3ex;
+    padding: 30px;
+    font-size: 1em;
+    background: $colour-grey-light;
+    box-shadow: 3px 3px 20px #dbdbdb;
+    width: 90%;
+    margin: 20px;
+    &:hover{
+        background: #F4EEFE;
+        &:hover .icon{
+           color: $colour-primary;;
+        }
+    }
+
+    &--active{
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        border-radius: 3ex;
+        padding: 30px;
+        font-size: 1em;
+        background: $colour-grey-light;
+        box-shadow: 3px 3px 20px #dbdbdb;
+        width: 90%;
+        margin: 20px;
+        background: #F4EEFE;
+    }
+}
+
+.restaurants{
+    background-color: $colour-grey-light;
+}
+
+.menu{
+  display:flex;
+  flex-direction: column;
+  padding: 20px 20px 50px 20px;
+  &__card{
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border-radius: 3ex;
+      margin: 10px;
+      &__cartel{
+          display: flex;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            h4{
+                font-size: 1.2em;
+                padding:5px;
+                margin:0;
+            }
+            p {
+                font-size: 1.2em;
+                padding:5px;
+                text-align:left;
+                margin:0;
+            }
+        }
+    }
+ }
+}
+.img-card{
+    border-radius: 3ex 3ex 0 0;
+    width:100%;
+}
+.favourite{
+    margin-left:auto;
+    font-size: 2em;
+    font-weight: lighter;
+    align-content: center;
+    padding-right: 20px;
+}

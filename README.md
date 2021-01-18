@@ -2,7 +2,7 @@
 
 https://juchri.github.io/JulietteChristain_3_04012020/
 
-Pour compiler Sass : 
+Pour compiler Sass :
 
 ```
 sass --watch sass/main.scss style.css

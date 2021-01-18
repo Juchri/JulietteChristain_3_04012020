@@ -9,7 +9,7 @@
 @import "./base/base";
 @import "./base/typography";
 
-// @import "./components/buttons";
+@import "./components/buttons";
 
 @import "./layout/header";
 @import "./layout/nav";
@@ -20,5 +20,5 @@
 @import "./pages/work";
 
 
-@import "./pages/about";
+@import "./pages/main";
 @import "./pages/project";

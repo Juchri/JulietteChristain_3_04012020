@@ -1,269 +1,264 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+/*@mixin shadow{$colour
+    shadow:
+}*/
+a {
+  text-decoration: none;
+  color: black;
 }
 
-html {
-  font-size: 62.5%;
+.img {
+  background-size: cover;
+  background-position: center;
 }
 
-body {
-  box-sizing: border-box;
-  background: #001534;
+.img-1 {
+  background-image: url("public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  width: 100%;
+  height: 200px;
+}
+
+.img-2 {
+  background-image: url("public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  width: 100%;
+  height: 200px;
+}
+
+.img-3 {
+  background-image: url("public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  width: 100%;
+  height: 200px;
+}
+
+.img-4 {
+  background-image: url("public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  width: 100%;
+  height: 200px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #15DEA5;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 1.7;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 5rem;
-  font-style: italic;
+  font-size: 2em;
+  padding: 60px 20px 20px 20px;
+  text-align: center;
+  margin: 0;
 }
 
-textarea {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
+h3 {
+  margin: 0;
 }
 
-button {
+p {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 2.75rem;
+  font-size: 1.3em;
+  padding: 20px;
+  text-align: center;
+  color: #5D5D5D;
+}
+
+.icon {
+  color: #5D5D5D;
+  padding: 0 20px 0 10px;
+}
+
+.number {
+  background-color: #9356DC;
+  border-radius: 5ex;
+  padding: 10px;
+  color: white;
+  font-size: 1.3em;
+  align-items: center;
+  display: flex;
+  height: 1ex;
+  position: absolute;
+}
+
+.icon {
+  color: #5D5D5D;
+  padding: 0 20px 0 10px;
+  font-size: 1.3em;
+}
+.icon--active {
+  color: #9356DC;
+  padding: 0 20px 0 10px;
+  font-size: 1.3em;
+}
+
+h2 {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.explore {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  align-items: center;
+  border-radius: 2ex;
+  padding: 10px 20px 10px 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  box-shadow: 3px 3px 20px #dbdbdb;
+  text-align: center;
+}
+
+.favourite {
+  border: none;
+  background: none;
+  color: linear-gradient(#FF79DA, #9356DC);
+}
+
+.active {
+  display: none;
+}
+
+.active:hover {
+  display: visible;
+}
+
+.container-logo {
+  background-image: url("/Users/juliettemarseilleconcerts/Documents/Openclassroom/Formation/P3 Oh my food/Site Oh my food/JulietteChristain_3_04012020/public/img/logo/ohmyfood@2x.svg");
+  background-repeat: no-repeat;
+  align-self: center;
+  height: 40px;
+  background-position: center;
 }
 
 .header {
-  background: #15DEA5;
-  height: 10rem;
   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  background-color: #EAEAEA;
+  border-top: solid #CCCCCC;
+  box-shadow: 3px 3px 20px #DEDEDE;
+  margin: 0;
+}
+
+.search-input {
+  font-size: Roboto;
+  border: 0px #CECDCE solid;
+  background-color: #EAEAEA;
+  font-weight: bold;
+}
+
+.localisation-logo {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.description {
+  background-color: #F6F6F6;
+  margin: 0;
+  display: flex;
+  align-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.header__logo {
-  font-size: 7rem;
-  color: #001534;
-  margin-left: 10rem;
-  text-shadow: 0.55rem 0.55rem #fff;
+  flex-direction: column;
+  padding-bottom: 50px;
 }
 
-.nav {
-  padding-right: 6rem;
-  flex: 2 1 auto;
-  text-align: right;
-}
-.nav__link {
-  display: inline;
-  font-size: 3rem;
-  padding-left: 1.5rem;
-}
-.nav__link a {
-  text-decoration: none;
-  color: #D6FFF5;
-}
-.nav__link--active {
-  color: #001534;
-}
-.nav__link--active:hover {
-  cursor: default;
-  color: #001534;
-}
-.nav__link a:hover {
-  color: #fff;
+.functions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0 20px 0;
+  font-size: 1em;
 }
 
-.container {
-  margin: 6rem;
-  padding: 1.5rem 1.5rem 0 1.5rem;
-  border: 0.1rem solid #D6FFF5;
+.text-functions {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  border-radius: 3ex;
+  padding: 30px;
+  font-size: 1em;
+  background: #F6F6F6;
+  box-shadow: 3px 3px 20px #dbdbdb;
+  width: 90%;
+  margin: 20px;
+}
+.text-functions:hover {
+  background: #F4EEFE;
+}
+.text-functions:hover:hover .icon {
+  color: #9356DC;
+}
+.text-functions--active {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  border-radius: 3ex;
+  padding: 30px;
+  font-size: 1em;
+  background: #F6F6F6;
+  box-shadow: 3px 3px 20px #dbdbdb;
+  width: 90%;
+  margin: 20px;
+  background: #F4EEFE;
 }
 
-.quote {
-  text-align: right;
-  font-size: 6rem;
-  font-weight: 900;
-  font-style: italic;
-  color: #D6FFF5;
-  margin: 2rem 6rem -3rem 6rem;
-}
-.quote strong {
-  color: #15DEA5;
+.restaurants {
+  background-color: #F6F6F6;
 }
 
-.proj-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1.5rem;
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 50px 20px;
 }
-
-.proj-prev {
-  color: #fff;
-  margin-bottom: 1.5rem;
+.menu__card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 3ex;
+  margin: 10px;
 }
-.proj-prev__image {
+.menu__card__cartel {
+  display: flex;
+}
+.menu__card__cartel__text {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.menu__card__cartel__text h4 {
+  font-size: 1.2em;
+  padding: 5px;
   margin: 0;
-  opacity: 0.2;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
 }
-.proj-prev__image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-}
-.proj-prev__heading {
-  font-size: 4rem;
-  padding-left: 2.5rem;
+.menu__card__cartel__text p {
+  font-size: 1.2em;
+  padding: 5px;
+  text-align: left;
   margin: 0;
-  line-height: 6rem;
-}
-.proj-prev__byline {
-  padding-left: 2.5rem;
-  font-size: 1.66rem;
-}
-.proj-prev:hover {
-  cursor: pointer;
-}
-.proj-prev:hover > .proj-prev__heading {
-  background: #15DEA5;
-}
-.proj-prev:hover > .proj-prev__image {
-  opacity: 1;
 }
 
-.about {
+.img-card {
+  border-radius: 3ex 3ex 0 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  grid-template-rows: repeat(3, auto);
-  padding: 1.5rem;
-  grid-template-areas: "imagery heading" "imagery copy" "imagery btn";
-  margin-bottom: 1.5rem;
-}
-.about__heading {
-  grid-area: heading;
-  color: #fff;
-  text-shadow: 0.55rem 0.55rem #11af82;
-  text-align: right;
-  padding-right: 1.5rem;
-}
-.about__imagery {
-  grid-area: imagery;
-}
-.about__pic {
-  overflow: hidden;
-  width: 80%;
-  border-radius: 1000rem;
-  border: 1.5rem solid #15DEA5;
-}
-.about__pic img {
-  display: block;
-  width: 100%;
-}
-.about__copy {
-  grid-area: copy;
-}
-.about__copy p {
-  line-height: 2.4rem;
-  margin-bottom: 3.375rem;
-}
-.about__btn {
-  padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
-  background: #001534;
-  cursor: pointer;
-  grid-area: btn;
-}
-.about__btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
-}
-.about__btn--full-width {
-  width: 100%;
-  margin: 0 auto;
-}
-.about__btn a {
-  text-decoration: none;
 }
 
-.project {
-  width: 100%;
-  margin-bottom: 1.8rem;
-  display: grid;
-  grid-template-columns: 5fr 3fr;
-  grid-template-rows: repeat(3, auto);
-  grid-gap: 1.5rem;
-  grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
-}
-.project__image {
-  grid-area: image;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-}
-.project__image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-}
-.project__synopsis {
-  grid-area: synopsis;
-  padding-left: 1.5rem;
-}
-.project__synopsis h1 {
-  color: #fff;
-  text-shadow: 0.55rem 0.55rem #11af82;
-}
-.project__synopsis p {
-  line-height: 2.5rem;
-}
-.project__tags {
-  grid-area: tags;
-}
-.project__tags p {
-  color: #fff;
-}
-.project__tags p strong {
-  color: #15DEA5;
-  font-weight: 900;
-  font-style: italic;
-}
-.project__btn {
-  padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
-  background: #001534;
-  cursor: pointer;
-  grid-area: btn;
-}
-.project__btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
-}
-.project__btn--full-width {
-  width: 100%;
-  margin: 0 auto;
+.favourite {
+  margin-left: auto;
+  font-size: 2em;
+  font-weight: lighter;
+  align-content: center;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

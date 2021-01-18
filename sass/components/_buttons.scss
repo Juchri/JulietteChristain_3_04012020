@@ -1,0 +1,28 @@
+.explore {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    align-items: center;
+    border-radius: 2ex;
+    padding: 10px 20px 10px 20px;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    border: none;
+    box-shadow: 3px 3px 20px #dbdbdb;
+    text-align: center;
+}
+
+.favourite
+{
+    border: none;
+    background:none;
+    color: linear-gradient($colour-secondary, $colour-primary);
+}
+
+.active{
+    display:none;
+}
+
+.active:hover{
+    display:visible;
+}
