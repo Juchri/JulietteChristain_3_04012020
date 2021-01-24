@@ -1,15 +1,17 @@
-.explore {
+button{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 1em;
     color: white;
     align-items: center;
     border-radius: 2ex;
-    padding: 10px 20px 10px 20px;
     background: linear-gradient($colour-secondary, $colour-primary);
     border: none;
     box-shadow: 3px 3px 20px #dbdbdb;
     text-align: center;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    align-self: center;
 }
 
 .favourite
