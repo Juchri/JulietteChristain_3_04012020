@@ -9,30 +9,31 @@ a {
 .img {
   background-size: cover;
   background-position: center;
+  height: 200px;
+  width: 100%;
+}
+
+.img-menu {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
 }
 
 .img-1 {
   background-image: url("public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  width: 100%;
-  height: 200px;
 }
 
 .img-2 {
   background-image: url("public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  width: 100%;
-  height: 200px;
 }
 
 .img-3 {
   background-image: url("public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  width: 100%;
-  height: 200px;
 }
 
 .img-4 {
   background-image: url("public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  width: 100%;
-  height: 200px;
 }
 
 body {
@@ -127,11 +128,27 @@ h3 {
 }
 
 .container-logo {
-  background-image: url("/Users/juliettemarseilleconcerts/Documents/Openclassroom/Formation/P3 Oh my food/Site Oh my food/JulietteChristain_3_04012020/public/img/logo/ohmyfood@2x.svg");
+  background-image: url("/public/img/logo/ohmyfood@2x.svg");
   background-repeat: no-repeat;
   align-self: center;
   height: 40px;
   background-position: center;
+}
+
+.header-menu {
+  background-image: url("/public/img/logo/ohmyfood@2x.svg");
+  background-repeat: no-repeat;
+  align-self: center;
+  height: 40px;
+  background-position: center;
+  display: flex;
+  height: 59px;
+}
+
+.return {
+  align-self: center;
+  padding-left: 15px;
+  font-size: 1.5em;
 }
 
 .header {
@@ -175,6 +192,7 @@ h3 {
 
 footer {
   background: #353535;
+  padding-bottom: 30px;
 }
 
 .logo--footer {
@@ -301,6 +319,90 @@ footer {
   font-weight: lighter;
   align-content: center;
   padding-right: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50Px;
+  background-color: #F6F6F6;
+  margin-top: -60px;
+}
+
+.name-restaurant {
+  display: flex;
+}
+.name-restaurant h1 {
+  font-family: Shrikhand, Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-top: -30px;
+  padding-left: 20px;
+}
+
+.favourite-menu {
+  font-size: 2em;
+  align-self: center;
+  margin-left: auto;
+  padding-right: 40px;
+}
+.favourite-menu--active {
+  display: none;
+}
+
+.category {
+  display: flex;
+  flex-direction: colomn;
+}
+.category__meal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.category__meal h2 {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 400;
+  font-size: 1em;
+  /*h2::after {
+  content:'';
+  position:absolute;
+  width:150px;
+  height:1px;
+  background:#000;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  }*/
+  border-bottom: solid 1px #99E2D0;
+  padding-bottom: 10px;
+}
+.category__meal--active {
+  display: none;
+}
+.category__meal__content {
+  display: flex;
+  flex-direction: column;
+}
+.category__meal__content__food {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px #dbdbdb;
+}
+.category__meal__content__food__details {
+  display: flex;
+  position: row;
+  justify-content: space-between;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.category__meal__content__food__details__price {
+  font-weight: bold;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

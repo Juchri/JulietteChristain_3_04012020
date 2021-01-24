@@ -1,10 +1,26 @@
 .container-logo {
-    background-image: url("/Users/juliettemarseilleconcerts/Documents/Openclassroom/Formation/P3 Oh my food/Site Oh my food/JulietteChristain_3_04012020/public/img/logo/ohmyfood@2x.svg");
+    background-image: url("/public/img/logo/ohmyfood@2x.svg");
     background-repeat: no-repeat;
     align-self: center;
     height: 40px;
     background-position: center;
     }
+
+.header-menu{
+    background-image: url("/public/img/logo/ohmyfood@2x.svg");
+    background-repeat: no-repeat;
+    align-self: center;
+    height: 40px;
+    background-position: center;
+    display: flex;
+    height: 59px;
+    }
+
+.return{
+    align-self: center;
+    padding-left: 15px;
+    font-size: 1.5em;
+}
 .header {
     display: flex;
     justify-content: space-between;
