@@ -31,8 +31,6 @@ article{
 .category
 {
    display:flex;
-   flex-direction: colomn;
-   display: flex;
    flex-direction: column;
    width: 100%;
         h2
@@ -102,7 +100,6 @@ hr {
     width: 40px;
     border: none;
     background-color: $colour-tertiary;
-    color: $colour-tertiary;
     overflow: visible;
     text-align: left;
     margin: 10px 0 20px 20px;

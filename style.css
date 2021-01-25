@@ -112,6 +112,11 @@ button {
   width: fit-content;
   padding: 10px 20px 10px 20px;
   align-self: center;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+button:hover {
+  transform: scale(1.15);
 }
 
 .favourite {
@@ -171,7 +176,7 @@ button {
 }
 
 .search-input {
-  font-size: Roboto;
+  font-family: Roboto;
   border: 0px #CECDCE solid;
   background-color: #EAEAEA;
   font-weight: bold;
@@ -354,8 +359,6 @@ article {
 
 .category {
   display: flex;
-  flex-direction: colomn;
-  display: flex;
   flex-direction: column;
   width: 100%;
 }
@@ -421,7 +424,6 @@ hr {
   width: 40px;
   border: none;
   background-color: #99E2D0;
-  color: #99E2D0;
   overflow: visible;
   text-align: left;
   margin: 10px 0 20px 20px;
