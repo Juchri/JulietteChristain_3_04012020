@@ -1,3 +1,4 @@
+
 article{
     display:flex;
     flex-direction:column;
@@ -39,19 +40,8 @@ article{
             color: black;
             font-weight: 400;
             font-size: 1em;
-                /*h2::after {
-                content:'';
-                position:absolute;
-                width:150px;
-                height:1px;
-                background:#000;
-                bottom:0;
-                left:0;
-                right:0;
-                margin:auto;
-                }*/
-            border-bottom: solid 1px $colour-tertiary;
-            padding-bottom: 10px;
+            padding-left: 20px;
+            margin-bottom: 0;
             }
             &--active{
                 display:none;
@@ -66,7 +56,6 @@ article{
             box-shadow: 3px 3px 20px #dbdbdb;
             &__details {
                 display:flex;
-                position: row;
                 justify-content: space-between;
                 font-weight: 300;
                 padding-top: 5px;
@@ -76,6 +65,11 @@ article{
                     &--validated {
                         background-color: $colour-tertiary;
                         color: white;
+                        border-radius: 0 20px 20px 0;
+                        padding: 22px;
+                        margin: -20px -10px -20px -20px;
+                        align-self: center;
+                        font-size: 1.3em;
                     }
                 }
             }
@@ -85,4 +79,28 @@ article{
 .order
 {
    margin: 30px 0 40px 0;
+}
+
+.validated
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.large
+{
+   flex-grow: 1;
+   margin-right: 20px;
+  }
+
+hr {
+    height: 3px;
+    width: 40px;
+    border: none;
+    background-color: $colour-tertiary;
+    color: $colour-tertiary;
+    overflow: visible;
+    text-align: left;
+    margin: 10px 0 20px 20px;
 }
