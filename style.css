@@ -125,17 +125,12 @@ button:hover {
   align-self: center;
 }
 
-.active {
-  display: none;
-  color: linear-gradient(#FF79DA, #9356DC);
-}
-
 .active:hover {
   display: visible;
 }
 
 .container-logo {
-  background-image: url("/public/img/logo/ohmyfood@2x.svg");
+  background-image: url("./public/img/logo/ohmyfood@2x.svg");
   background-repeat: no-repeat;
   align-self: center;
   height: 40px;
@@ -143,7 +138,7 @@ button:hover {
 }
 
 .header-menu {
-  background-image: url("/public/img/logo/ohmyfood@2x.svg");
+  background-image: url("./public/img/logo/ohmyfood@2x.svg");
   background-repeat: no-repeat;
   align-self: center;
   height: 40px;

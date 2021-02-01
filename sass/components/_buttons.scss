@@ -26,11 +26,6 @@ button{
     align-self: center;
 }
 
-.active{
-    display:none;
-    color: linear-gradient($colour-secondary, $colour-primary)
-}
-
 .active:hover{
     display:visible;
 }
