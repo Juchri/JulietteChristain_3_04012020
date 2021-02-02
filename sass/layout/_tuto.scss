@@ -1,0 +1,41 @@
+.functions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    font-size: 1em;
+    }
+
+.text-functions
+{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    border-radius: 3ex;
+    padding: 30px;
+    font-size: 1em;
+    background: $colour-grey-light;
+    box-shadow: 3px 3px 20px #dbdbdb;
+    width: 90%;
+    margin: 20px;
+    &:hover{
+        background: #F4EEFE;
+        &:hover .icon{
+           color: $colour-primary;;
+        }
+    }
+
+    &--active{
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        border-radius: 3ex;
+        padding: 30px;
+        font-size: 1em;
+        background: $colour-grey-light;
+        box-shadow: 3px 3px 20px #dbdbdb;
+        width: 90%;
+        margin: 20px;
+        background: #F4EEFE;
+    }
+}
