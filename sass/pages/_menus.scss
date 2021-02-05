@@ -63,7 +63,7 @@ article{
                 &__price {
                 font-weight: bold;
                 padding-right: 10px;
-                    &--validated {
+                    &__box {
                         background-color: $colour-tertiary;
                         color: white;
                         border-radius: 0 20px 20px 0;
@@ -71,11 +71,19 @@ article{
                         margin: -20px -10px -20px -20px;
                         align-self: center;
                         font-size: 1.3em;
+                            &--validated{
+                                &:hover{
+                                    cursor: pointer;
+                                    transition: transform 0.7s;
+                                    transform: rotate(360deg);
+                        }
                     }
                 }
             }
         }
     }
+}
+
 
 .order
 {
@@ -104,3 +112,16 @@ hr {
     text-align: left;
     margin: 10px 0 20px 20px;
 }
+
+@keyframes space-spin {
+    0% {
+        opacity: 1;
+      }
+    80% {
+        opacity: 1;
+      }
+    100% {
+        opacity: 0;
+        display: none;
+      }
+    }
