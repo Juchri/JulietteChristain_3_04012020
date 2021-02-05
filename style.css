@@ -125,8 +125,22 @@ button:hover {
   align-self: center;
 }
 
-.active:hover {
-  display: visible;
+.fa-heart:hover::before {
+  background: linear-gradient(#9356DC, #FF79DA);
+  font-weight: bold;
+  /*background prend la forme du coeur*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.fa-heart:active::before {
+  background: linear-gradient(#9356DC, #FF79DA);
+  font-weight: bold;
+  /*background prend la forme du coeur*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 
 .loader {
@@ -377,7 +391,7 @@ footer {
 }
 
 .menu__card:hover {
-  transform: scale(1.15);
+  transform: scale(0.9);
 }
 
 .new {
@@ -489,6 +503,9 @@ article {
   transform: rotate(360deg);
 }
 
+/*.test {
+    transition: ease-in-out 3s;
+}*/
 .order {
   margin: 30px 0 40px 0;
 }
