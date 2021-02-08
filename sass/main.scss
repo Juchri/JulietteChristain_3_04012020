@@ -3,27 +3,22 @@
 @import "./utils/mixins";
 @import "./utils/extensions";
 
-
-
-
 @import "./base/base";
 @import "./base/typography";
 
 @import "./components/buttons";
 @import "./components/heart";
 @import "./components/animations";
+@import "./components/loader";
 
 @import "./layout/header";
 @import "./layout/nav";
 @import "./layout/container";
 @import "./layout/footer";
-// @import "./layout/form";
-
+@import "./layout/home";
+@import "./layout/menus";
+@import "./layout/tuto";
 
 @import "./pages/work";
-
-
-@import "./pages/main";
-@import "./pages/menus";
 @import "./pages/project";
-@import "./layout/tuto";
+
