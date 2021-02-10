@@ -193,24 +193,17 @@ button:hover {
     transform: translate(0, 0);
   }
 }
-.test2 {
-  visibility: hidden;
+.checkbox {
   display: flex;
-  justify-content: flex-end;
-  height: 25px;
-  padding: 20px 20px 20px 60px;
+  padding-left: calc( 40px / 2);
+  padding-right: calc( 40px / 2);
   background-color: #99E2D0;
   color: white;
   border-radius: 0 20px 20px 0;
-  margin-top: -35px;
-  margin-bottom: -10px;
-  margin-right: -10px;
-  align-self: center;
+  margin-right: 0;
   font-size: 1.3em;
   font-weight: 300;
-  text-overflow: ellipsis;
   transform: translateX(4em);
-  width: 0;
 }
 
 .fa-check-circle {
@@ -219,33 +212,39 @@ button:hover {
   color: white;
 }
 
-.test1:hover .fa-check-circle {
+.conteneur__category__food__details:hover .fa-check-circle {
   transition: transform 700ms ease;
   transform: rotate(360deg);
   cursor: pointer;
   opacity: 1;
 }
 
-.test1:hover .test2 {
+.conteneur__category__food__details a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.conteneur__category__food__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.conteneur__category__food__details:hover .checkbox {
   visibility: visible;
   transition: all 1s;
   transform-origin: center;
-  background-color: red;
-  transform: translateX(0em);
-  width: 4;
+  transform: translateX(0);
+  transform: translateX(40px);
+  transition: all 1s;
 }
 
-@keyframes checked-animation {
-  0% {
-    right: 0;
-  }
-  30%, 40% {
-    right: 20%;
-  }
-  100% {
-    right: 110%;
-  }
+.conteneur__category__food__details:hover .checkbox {
+  transform: translateX(0);
 }
+
 .loader {
   animation: 3000ms ease-in-out 0ms 1 normal both running space-spin;
   width: 100%;
@@ -491,9 +490,9 @@ article {
 }
 
 .category {
-  display: flex;
+  /*display:flex;
   flex-direction: column;
-  width: 100%;
+  width: 100%;*/
 }
 .category h2 {
   text-transform: uppercase;
@@ -518,22 +517,17 @@ article {
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .category__food__details__price {
   font-weight: bold;
-  padding-right: 10px;
+  padding-right: 2em;
+  margin-left: auto;
 }
 
-/*.test {
-    transition: ease-in-out 3s;
-}*/
-.order {
-  margin: 30px 0 40px 0;
-}
-
-.large {
-  flex-grow: 1;
-  margin-right: 20px;
+h3 {
+  width: 100%;
 }
 
 hr {

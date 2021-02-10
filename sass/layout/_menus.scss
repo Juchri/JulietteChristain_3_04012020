@@ -30,9 +30,9 @@ article{
 
 .category
 {
-   display:flex;
+   /*display:flex;
    flex-direction: column;
-   width: 100%;
+   width: 100%;*/
         h2
         {
             text-transform: uppercase;
@@ -56,29 +56,20 @@ article{
             display: flex;
             justify-content: space-between;
             white-space: nowrap;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             &__price{
             font-weight: bold;
-            padding-right: 10px;
+            padding-right: 2em;
+            margin-left: auto;
             }
         }
     }
 }
 
-/*.test {
-    transition: ease-in-out 3s;
-}*/
-
-
-.order
-{
-   margin: 30px 0 40px 0;
+h3 {
+    width: 100%;
 }
-
-.large
-{
-   flex-grow: 1;
-   margin-right: 20px;
-  }
 
 hr {
     height: 3px;
