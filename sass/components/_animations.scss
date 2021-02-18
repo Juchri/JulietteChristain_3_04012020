@@ -5,106 +5,85 @@
     animation-fill-mode: both;
 }
 
-.apparition_1 {
-animation-delay: 0.4ms;
-}
-
-.apparition_2 {
-    animation-delay: 0.8s;
-}
-
-.apparition_3 {
-    animation-delay: 1.2s;
-}
-
-.apparition_4 {
-    animation-delay: 1.6s;
-}
-
-.apparition_5 {
-    animation-delay: 2s;
-}
-
-.apparition_6 {
-    animation-delay: 2.4s;
-}
-
-.apparition_7 {
-    animation-delay: 2.8s;
-}
-
-.apparition_8 {
-    animation-delay: 3.2s;
-}
-
-.apparition_9 {
-    animation-delay: 3.6s;
-}
-
-@keyframes delayapparition {
+@keyframes delayapparition{
     0% {
         opacity: 0;
         transform: translate(100%, 0);
     }
-
     100% {
         opacity: 1;
         transform: translate(0, 0);
     }
 }
 
+.apparition_1 {
+    animation-delay: 0.8s;
+}
+
+.apparition_2 {
+    animation-delay: 1.2s;
+}
+
+.apparition_3 {
+    animation-delay: 1.6s;
+}
+
+.apparition_4 {
+    animation-delay: 2s;
+}
+
+.apparition_5 {
+    animation-delay: 2.4s;
+}
+
+.apparition_6 {
+    animation-delay: 2.8s;
+}
+
+.apparition_7 {
+    animation-delay: 3.2s;
+}
+
+.apparition_8 {
+    animation-delay: 3.6s;
+}
+
+.apparition_9 {
+    animation-delay: 4s;
+}
+
+.apparition_10 {
+    animation-delay: 4.4s;
+}
+
 $checkboxWidth: 40px;
-.checkbox{
-    //visibility: hidden;
+.category__food__colomn2__checkbox{
     display: flex;
-    padding-left: calc( #{$checkboxWidth} / 2);
-    padding-right: calc( #{$checkboxWidth} / 2);
     background-color: $colour-tertiary;
     color: white;
     border-radius: 0 20px 20px 0;
-    margin-right: 0;
     font-size: 1.3em;
     font-weight: 300;
-    transform: translateX(+4em);
-
+    transform: transform 0.7s;
+    width: 0;
+    padding-right: 5px;
+    cursor: pointer;
 }
 
 .fa-check-circle{
-    opacity:0;
-    align-self: center;
+    margin: auto;
     color: white;
 }
 
-.conteneur__category__food__details:hover .fa-check-circle{
+.category__food:hover .fa-check-circle{
     transition: transform 700ms ease;
     transform: rotate(360deg);
     cursor: pointer;
-    opacity:1;
 }
 
-.conteneur__category__food__details a{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.conteneur__category__food__details
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.conteneur__category__food__details:hover .checkbox{
-    visibility:visible;
+.category__food:hover .category__food__colomn2__checkbox{
+    width: 3em;
     transition: all 1s;
-    transform-origin: center;
     transform: translateX(0);
-    transform: translateX($checkboxWidth);
-    transition: all 1s;
-}
-
-.conteneur__category__food__details:hover .checkbox {
-    transform: translateX(0);
+    text-overflow: ellipsis;
 }

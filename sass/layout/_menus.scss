@@ -15,6 +15,11 @@ article{
         padding-left: 20px;
         padding-bottom: 10px;
     }
+    @media (min-width: 599px) {
+        font-size: 1.5em;
+        padding-left: 20px;
+        letter-spacing: 0.15em;
+        }
 }
 
 .favourite-menu
@@ -28,11 +33,19 @@ article{
     }
 }
 
+.menu{
+@media (min-width: 599px) {
+    justify-content: space-between;
+    padding: 20px;
+    }
+
 .category
 {
-   /*display:flex;
-   flex-direction: column;
-   width: 100%;*/
+    @media (min-width: 599px) {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        }
         h2
         {
             text-transform: uppercase;
@@ -44,31 +57,37 @@ article{
             margin-bottom: 0;
             margin-top: 0;
             }
-        &__food {
+        &__food{
             display:flex;
-            flex-direction: column;
-            background-color:white;
             margin: 10px;
-            padding: 10px;
+            justify-content: space-between;
+            flex-direction: row;
+            background-color:white;
             border-radius: 20px;
             box-shadow: 3px 3px 20px #dbdbdb;
-            &__details{
             display: flex;
             justify-content: space-between;
             white-space: nowrap;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            &__price{
-            font-weight: bold;
-            padding-right: 2em;
-            margin-left: auto;
+            overflow: hidden;
+                &__colomn{
+                    padding: 10px;
             }
         }
     }
 }
-
-h3 {
-    width: 100%;
+.category__food__colomn2{
+    display: flex;
+    flex-direction: row;
+    &__price {
+        margin-top: auto;
+        padding:10px;
+    }
+}
+.category__food__colomn2__price {
+    margin-left:auto;
+    font-weight: bold;
+    display:flex;
+    align-content: flex-end;
 }
 
 hr {
