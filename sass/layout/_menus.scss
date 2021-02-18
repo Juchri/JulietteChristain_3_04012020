@@ -33,7 +33,9 @@ article{
     }
 }
 
-.menu{
+.container-category{
+    display:flex;
+    flex-direction: row;
 @media (min-width: 599px) {
     justify-content: space-between;
     padding: 20px;

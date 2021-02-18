@@ -404,7 +404,11 @@ footer {
   box-shadow: 3px 3px 20px #dbdbdb;
   transform: scale(1);
   transition: transform 400ms;
-  width: 30%;
+}
+@media (min-width: 599px) {
+  .menu__card {
+    width: 30%;
+  }
 }
 .menu__card__cartel {
   display: flex;
@@ -495,20 +499,24 @@ article {
   display: none;
 }
 
+.container-category {
+  display: flex;
+  flex-direction: row;
+}
 @media (min-width: 599px) {
-  .menu {
+  .container-category {
     justify-content: space-between;
     padding: 20px;
   }
 }
 @media (min-width: 599px) {
-  .menu .category {
+  .container-category .category {
     display: flex;
     flex-direction: column;
     width: 30%;
   }
 }
-.menu .category h2 {
+.container-category .category h2 {
   text-transform: uppercase;
   color: black;
   font-weight: 400;
@@ -518,7 +526,7 @@ article {
   margin-bottom: 0;
   margin-top: 0;
 }
-.menu .category__food {
+.container-category .category__food {
   display: flex;
   margin: 10px;
   justify-content: space-between;
@@ -531,7 +539,7 @@ article {
   white-space: nowrap;
   overflow: hidden;
 }
-.menu .category__food__colomn {
+.container-category .category__food__colomn {
   padding: 10px;
 }
 
