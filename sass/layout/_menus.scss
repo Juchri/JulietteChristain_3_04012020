@@ -34,9 +34,9 @@ article{
 }
 
 .container-category{
+@media (min-width: 599px) {
     display:flex;
     flex-direction: row;
-@media (min-width: 599px) {
     justify-content: space-between;
     padding: 20px;
     }
@@ -73,6 +73,9 @@ article{
             overflow: hidden;
                 &__colomn{
                     padding: 10px;
+                    text-overflow: hidden;
+                    white-space: nowrap;
+                    overflow: hidden;
             }
         }
     }
@@ -86,10 +89,11 @@ article{
     }
 }
 .category__food__colomn2__price {
-    margin-left:auto;
     font-weight: bold;
     display:flex;
-    align-content: flex-end;
+    text-overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 hr {

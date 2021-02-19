@@ -203,7 +203,6 @@ button:hover {
   font-weight: 300;
   transform: transform 0.7s;
   width: 0;
-  padding-right: 5px;
   cursor: pointer;
 }
 
@@ -393,6 +392,8 @@ footer {
 @media (min-width: 599px) {
   .menu {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .menu__card {
@@ -407,7 +408,12 @@ footer {
 }
 @media (min-width: 599px) {
   .menu__card {
-    width: 30%;
+    width: 45%;
+  }
+}
+@media (min-width: 1100px) {
+  .menu__card {
+    width: 23%;
   }
 }
 .menu__card__cartel {
@@ -499,12 +505,10 @@ article {
   display: none;
 }
 
-.container-category {
-  display: flex;
-  flex-direction: row;
-}
 @media (min-width: 599px) {
   .container-category {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
   }
@@ -541,6 +545,9 @@ article {
 }
 .container-category .category__food__colomn {
   padding: 10px;
+  text-overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .category__food__colomn2 {
@@ -553,10 +560,11 @@ article {
 }
 
 .category__food__colomn2__price {
-  margin-left: auto;
   font-weight: bold;
   display: flex;
-  align-content: flex-end;
+  text-overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 hr {
@@ -584,12 +592,12 @@ hr {
 .container-functions {
   background-color: white;
   display: flex;
-  padding-top: 20px;
+  margin: 10px;
 }
 @media (min-width: 599px) {
   .container-functions {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -597,8 +605,17 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 20px 0 20px 0;
   font-size: 1em;
+}
+@media (min-width: 599px) {
+  .functions {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 1100px) {
+  .functions {
+    font-size: 1em;
+  }
 }
 
 .text-functions {
