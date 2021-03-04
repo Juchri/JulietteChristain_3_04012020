@@ -71,18 +71,23 @@ $checkboxWidth: 40px;
 
 .fa-check-circle{
     margin: auto;
-    color: white;
+    visibility:hidden;
 }
 
 .category__food:hover .fa-check-circle{
     transition: transform 700ms ease;
     transform: rotate(360deg);
     cursor: pointer;
+    visibility:visible;
 }
 
 .category__food:hover .category__food__colomn2__checkbox{
     width: 3em;
     transition: all 1s;
     transform: translateX(0);
-    text-overflow: ellipsis;
+}
+
+.category__food__colomn2__checkbox{
+    transition: all 1s;
+    transform: translateX(-10);
 }
