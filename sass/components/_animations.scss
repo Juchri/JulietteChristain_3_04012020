@@ -56,7 +56,6 @@
     animation-delay: 4.4s;
 }
 
-$checkboxWidth: 40px;
 .category__food__colomn2__checkbox{
     display: flex;
     background-color: $colour-tertiary;
@@ -67,6 +66,7 @@ $checkboxWidth: 40px;
     transform: transform 0.7s;
     width: 0;
     cursor: pointer;
+    position: relative;
 }
 
 .fa-check-circle{
@@ -75,7 +75,7 @@ $checkboxWidth: 40px;
 }
 
 .category__food:hover .fa-check-circle{
-    transition: transform 700ms ease;
+    transition: transform 1000ms ease;
     transform: rotate(360deg);
     cursor: pointer;
     visibility:visible;
@@ -90,4 +90,9 @@ $checkboxWidth: 40px;
 .category__food__colomn2__checkbox{
     transition: all 1s;
     transform: translateX(-10);
+    background-position: center;
+}
+
+.category__food__colomn2__checkbox::before{
+    box-sizing: border-box;
 }

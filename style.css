@@ -204,6 +204,7 @@ button:hover {
   transform: transform 0.7s;
   width: 0;
   cursor: pointer;
+  position: relative;
 }
 
 .fa-check-circle {
@@ -212,7 +213,7 @@ button:hover {
 }
 
 .category__food:hover .fa-check-circle {
-  transition: transform 700ms ease;
+  transition: transform 1000ms ease;
   transform: rotate(360deg);
   cursor: pointer;
   visibility: visible;
@@ -227,6 +228,11 @@ button:hover {
 .category__food__colomn2__checkbox {
   transition: all 1s;
   transform: translateX(-10);
+  background-position: center;
+}
+
+.category__food__colomn2__checkbox::before {
+  box-sizing: border-box;
 }
 
 .loader {
@@ -510,70 +516,78 @@ article {
   display: none;
 }
 
+.container-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
 @media (min-width: 599px) {
   .container-category {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
   }
+}
+@media (min-width: 599px) {
   .container-category .category {
     display: flex;
     flex-direction: column;
     width: 30%;
   }
-  .container-category .category h2 {
-    text-transform: uppercase;
-    color: black;
-    font-weight: 400;
-    font-size: 1em;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  .container-category .category__food {
-    display: flex;
-    margin: 10px;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 3px 3px 20px #dbdbdb;
-  }
-  .container-category .category__food__colomn {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    overflow: hidden;
-  }
-  .container-category .category__food__colomn__title {
-    overflow: hidden;
-    width: 100%;
-  }
-  .container-category .category__food__colomn__title h3 {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  .container-category .category__food__colomn__details {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .container-category .category__food__colomn__price {
-    font-weight: bold;
-    margin-top: auto;
-    margin-left: auto;
-    padding-bottom: 10px;
-    padding-right: 10px;
-  }
-  .container-category .category__food__colomn2 {
-    display: flex;
-    flex-direction: row;
-  }
 }
+.container-category .category h2 {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 400;
+  font-size: 1em;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.container-category .category__food {
+  display: flex;
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px #dbdbdb;
+  overflow: hidden;
+}
+.container-category .category__food__colomn {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  overflow: hidden;
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+}
+.container-category .category__food__colomn__title {
+  overflow: hidden;
+  width: 100%;
+}
+.container-category .category__food__colomn__title h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container-category .category__food__colomn__details {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 70%;
+}
+.container-category .category__food__colomn__price {
+  font-weight: bold;
+  margin-top: auto;
+  margin-left: auto;
+  padding-right: 10px;
+}
+.container-category .category__food__colomn2 {
+  display: flex;
+  flex-direction: row;
+}
+
 hr {
   height: 3px;
   width: 40px;
