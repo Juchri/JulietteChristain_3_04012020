@@ -308,10 +308,6 @@ button:hover {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transform: translateX(-10);
-      -ms-transform: translateX(-10);
-          transform: translateX(-10);
-  background-position: center;
 }
 
 .category__food__colomn2__checkbox::before {
